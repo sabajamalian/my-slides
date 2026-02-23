@@ -18,3 +18,137 @@
   border: none;
   box-shadow: none;
 }
+
+/* ───────────────────────────────────────────────
+   Utility classes – reusable across all decks
+   ─────────────────────────────────────────────── */
+
+/* Two-column grid layout */
+.two-col {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  text-align: left;
+}
+
+/* Three-column grid layout */
+.three-col {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2em;
+  text-align: left;
+}
+
+/* Model-tier badges */
+.tier {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 0.3em;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.03em;
+}
+.tier-free  { background: #2ea043; color: #fff; }
+.tier-mid   { background: #d29922; color: #fff; }
+.tier-heavy { background: #da3633; color: #fff; }
+
+/* Callout box */
+.callout {
+  background: rgba(255, 255, 255, 0.07);
+  border-left: 4px solid #58a6ff;
+  border-radius: 0.3em;
+  padding: 0.7em 1em;
+  margin: 0.6em auto;
+  text-align: left;
+  font-size: 0.92em;
+}
+.callout.warn {
+  border-left-color: #d29922;
+}
+
+/* Big number / stat */
+.big-number {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0.2em 0;
+}
+.big-number small {
+  font-size: 0.35em;
+  font-weight: 400;
+  opacity: 0.7;
+  display: block;
+}
+
+/* Icon + text row */
+.icon-text {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 0.6em;
+  text-align: left;
+  margin: 0.4em 0;
+}
+.icon-text .icon {
+  font-size: 1.6em;
+  flex-shrink: 0;
+}
+
+/* Stepped / escalation ladder */
+.ladder {
+  display: flex !important;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.8em;
+  margin: 1em 0;
+}
+.ladder .step {
+  padding: 0.6em 1em;
+  border-radius: 0.4em;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.82em;
+  min-width: 7em;
+}
+.ladder .step-1 { background: #2ea043; color: #fff; min-height: 3em; }
+.ladder .step-2 { background: #d29922; color: #fff; min-height: 5em; }
+.ladder .step-3 { background: #da3633; color: #fff; min-height: 7em; }
+
+/* Do / Don't columns */
+.do-dont .do   { color: #3fb950; }
+.do-dont .dont { color: #f85149; }
+.do-dont h4    { margin-top: 0; }
+
+/* Subtle list styling inside slides */
+.reveal .compact-list li {
+  margin-bottom: 0.35em;
+  font-size: 0.88em;
+}
+
+/* Action-plan numbered items */
+.action-plan {
+  counter-reset: action;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+.action-plan li {
+  counter-increment: action;
+  margin-bottom: 0.5em;
+  padding-left: 2em;
+  position: relative;
+}
+.action-plan li::before {
+  content: counter(action);
+  position: absolute;
+  left: 0;
+  background: #58a6ff;
+  color: #0d1117;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8em;
+}
