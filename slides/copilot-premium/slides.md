@@ -10,7 +10,7 @@ revealOptions:
 
 # Spend Smart
 
-### Mastering GitHub Copilot Premium Requests
+### Spend Smart: Copilot Premium Requests
 
 <br>
 
