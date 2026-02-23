@@ -1,0 +1,10 @@
+{
+  "controls": true,
+  "controlsTutorial": true,
+  "progress": true,
+  "slideNumber": true,
+  "hash": true,
+  "transition": "slide",
+  "backgroundTransition": "fade",
+  "center": true
+}

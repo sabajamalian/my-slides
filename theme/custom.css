@@ -1,0 +1,20 @@
+/* Custom theme overrides shared across all slide decks */
+
+/* Override section (slide) styling */
+.reveal section {
+  font-size: 0.9em;
+}
+
+/* Code block styling */
+.reveal pre code {
+  max-height: 500px;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+/* Image sizing */
+.reveal section img {
+  max-height: 60vh;
+  border: none;
+  box-shadow: none;
+}

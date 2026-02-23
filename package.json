@@ -1,0 +1,25 @@
+{
+  "name": "my-slides",
+  "version": "1.0.0",
+  "description": "Multi-topic Reveal.js presentations authored in Markdown",
+  "scripts": {
+    "dev": "reveal-md slides/ -w",
+    "start": "reveal-md slides/ -w",
+    "build": "reveal-md slides/ --static _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabajamalian/my-slides.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sabajamalian/my-slides/issues"
+  },
+  "homepage": "https://github.com/sabajamalian/my-slides#readme",
+  "dependencies": {
+    "reveal-md": "^6.1.2"
+  }
+}

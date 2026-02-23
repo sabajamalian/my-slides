@@ -1,0 +1,8 @@
+{
+  "separator": "^---$",
+  "verticalSeparator": "^--$",
+  "notesSeparator": "^Note:",
+  "css": "theme/custom.css",
+  "highlightTheme": "monokai",
+  "watch": true
+}
