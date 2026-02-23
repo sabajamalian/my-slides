@@ -26,8 +26,8 @@ Note: This talk is for developers who use GitHub Copilot with premium model acce
 
 <div>
 A great portion of premium requests could have been handled by a free model
-<small>Don't default to premium — escalate only when needed</small>
 </div>
+<div>Don't default to premium — escalate only when needed</div>
 
 ---
 
