@@ -6,5 +6,9 @@
   "hash": true,
   "transition": "slide",
   "backgroundTransition": "fade",
-  "center": true
+  "center": true,
+  "width": 960,
+  "height": 700,
+  "minScale": 0.2,
+  "maxScale": 1.5
 }

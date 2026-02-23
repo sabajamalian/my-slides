@@ -2,21 +2,59 @@
 
 /* Override section (slide) styling */
 .reveal section {
-  font-size: 0.9em;
+  font-size: 0.78em;
 }
+
+/* Tighten overall slide padding so content has more room */
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 10px 20px;
+}
+
+/* Reduce heading sizes to reclaim vertical space */
+.reveal h2 { font-size: 1.4em; margin: 0.3em 0; }
+.reveal h3 { font-size: 1.1em; margin: 0.25em 0; }
+.reveal h4 { font-size: 1.0em; margin: 0.2em 0; }
+
+/* Tighter list spacing */
+.reveal ul, .reveal ol { margin: 0.3em 0; }
+.reveal li { margin-bottom: 0.2em; line-height: 1.35; }
+
+/* Tighter paragraph spacing */
+.reveal p { margin: 0.3em 0; }
 
 /* Code block styling */
 .reveal pre code {
-  max-height: 500px;
-  font-size: 0.85em;
-  line-height: 1.4;
+  max-height: 400px;
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+.reveal pre {
+  margin: 0.4em 0;
+}
+
+/* Table styling – compact */
+.reveal table {
+  font-size: 0.82em;
+  margin: 0.4em auto;
+}
+.reveal table th,
+.reveal table td {
+  padding: 0.25em 0.6em;
+  line-height: 1.3;
 }
 
 /* Image sizing */
 .reveal section img {
-  max-height: 60vh;
+  max-height: 50vh;
   border: none;
   box-shadow: none;
+}
+
+/* Blockquote – tighter */
+.reveal blockquote {
+  margin: 0.4em 0;
+  padding: 0.3em 0.8em;
 }
 
 /* ───────────────────────────────────────────────
@@ -27,7 +65,7 @@
 .two-col {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
-  gap: 1.2em;
+  gap: 0.8em;
   text-align: left;
 }
 
@@ -35,8 +73,9 @@
 .three-col {
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.2em;
+  gap: 0.7em;
   text-align: left;
+  font-size: 0.92em;
 }
 
 /* Model-tier badges */
@@ -57,10 +96,10 @@
   background: rgba(255, 255, 255, 0.07);
   border-left: 4px solid #58a6ff;
   border-radius: 0.3em;
-  padding: 0.7em 1em;
-  margin: 0.6em auto;
+  padding: 0.5em 0.8em;
+  margin: 0.4em auto;
   text-align: left;
-  font-size: 0.92em;
+  font-size: 0.88em;
 }
 .callout.warn {
   border-left-color: #d29922;
@@ -84,12 +123,12 @@
 .icon-text {
   display: flex !important;
   align-items: flex-start;
-  gap: 0.6em;
+  gap: 0.5em;
   text-align: left;
-  margin: 0.4em 0;
+  margin: 0.25em 0;
 }
 .icon-text .icon {
-  font-size: 1.6em;
+  font-size: 1.3em;
   flex-shrink: 0;
 }
 
@@ -98,16 +137,16 @@
   display: flex !important;
   justify-content: center;
   align-items: flex-end;
-  gap: 0.8em;
-  margin: 1em 0;
+  gap: 0.6em;
+  margin: 0.6em 0;
 }
 .ladder .step {
-  padding: 0.6em 1em;
+  padding: 0.4em 0.8em;
   border-radius: 0.4em;
   text-align: center;
   font-weight: 600;
-  font-size: 0.82em;
-  min-width: 7em;
+  font-size: 0.78em;
+  min-width: 6em;
 }
 .ladder .step-1 { background: #2ea043; color: #fff; min-height: 3em; }
 .ladder .step-2 { background: #d29922; color: #fff; min-height: 5em; }
@@ -133,7 +172,7 @@
 }
 .action-plan li {
   counter-increment: action;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.35em;
   padding-left: 2em;
   position: relative;
 }

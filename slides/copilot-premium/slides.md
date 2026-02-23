@@ -10,7 +10,7 @@ revealOptions:
 
 # Spend Smart
 
-### Spend Smart: Copilot Premium Requests
+### Copilot Premium Requests
 
 <br>
 
@@ -24,7 +24,7 @@ Note: This talk is for developers who use GitHub Copilot with premium model acce
 
 ## 😬 The Problem
 
-<div class="big-number">
+<div>
 A great portion of premium requests could have been handled by a free model
 <small>Don't default to premium — escalate only when needed</small>
 </div>
@@ -110,7 +110,7 @@ Note: Model availability and multipliers can change — check GitHub's docs for 
 | Deep Research | **~10×+** | Exhaustive analysis |
 <br>
 
-*Note: Multipliers are estimates only and subject to change; check current pricing/docs for exact values.*
+[Note: Multipliers are estimates only and subject to change; check current pricing for exact values.](https://docs.github.com/en/billing/concepts/product-billing/github-copilot-premium-requests)
 
 ---
 
@@ -144,14 +144,13 @@ Note: Model availability and multipliers can change — check GitHub's docs for 
 Turn it on. Keep it on. Forget about it.
 </div>
 
-- Routes each request to the most cost‑efficient, capable model available — balancing capability with cost. <!-- .element: class="fragment fade-up" -->
 - Optimizes for model availability and load to reduce rate‑limit failures and improve throughput/latency. <!-- .element: class="fragment fade-up" -->
 - Automatically falls back to responsive endpoints and lower‑cost models when appropriate, lowering spend without manual tuning. <!-- .element: class="fragment fade-up" -->
-- Zero maintenance after setup — continuous routing decisions save premium requests and stabilize performance. <!-- .element: class="fragment fade-up" -->
+- Zero maintenance after setup. <!-- .element: class="fragment fade-up" -->
 
 **→ Recommended as your default configuration** <!-- .element: class="fragment fade-in" style="color:#3fb950" -->
 
-Note: See GitHub's docs for details and behavior: https://docs.github.com/en/copilot/concepts/auto-model-selection
+Note: See GitHub's docs for details and behavior: [Auto model selection](https://docs.github.com/en/copilot/concepts/auto-model-selection)
 
 ---
 
